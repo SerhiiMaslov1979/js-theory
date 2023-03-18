@@ -1,3 +1,4 @@
+// 1-1 модуль
 // 1. Example базовые математические операторы.
 // Выведи на экранобщее количество яблок и винограда.
 // Разницу яблок и венограда.
@@ -115,4 +116,89 @@
 
 // const doubleDigitHours = String(hours).padStart(2, 0);
 // const doubleDigitMinutes = String(minutes).padStart(2, 0);
-// console.log(`${doubleDigitHours}:${doubleDigitMinutes}`);
+// console.log(`${doubleDigitHours}:${doubleDigitMinutes}`)
+
+//----------------------------------------------------------
+
+// 1-2 модуль
+
+// const userNumber = prompt("Enter number");
+
+// if (userNumber % 2 === 0) {
+//   console.log("Парное число");
+// } else {
+//   console.log("Не парное число");
+// }
+// for (let i = 0; i <= 10; i += 1) {
+//   if (i % 2 !== 0) {
+//     continue;
+//   }
+//   console.log(i);
+// }
+
+// for (let i = 0; i <= 10; i += 1) {
+//   if (i === 5) {
+//     break;
+//   }
+//   console.log(i);
+// }
+
+// for (let i = 0; i <= 10; i += 1) {
+//   switch (i) {
+//     case 5:
+//       break;
+//     default:
+//       break;
+//   }
+//   console.log(i);
+// }
+// const hours = 14;
+// const minutes = 26;
+// let timeString;
+// if (minutes === 0) {
+//   timeString = `${hours}години ${minutes}хвилини`;
+// }
+
+// const minutes = 74;
+// const minutes = 456;
+
+// const minutesValue = minutes % 60;
+// const hours = Math.floor(minutes / 60);
+// console.log(`${hours}:${minutesValue}`);
+
+// Цикли
+// const max = 100;
+// const min = 20;
+// // for (let i = min; i <= max; i += 1) {
+//   if (i % 5 === 0) {
+//     console.log(i);
+//   }
+// }
+// for (let i = min; i <= max; i += 5) {
+//   console.log(i);
+// }
+//------------------------
+// let i = min;
+
+// while (i <= max) {
+//   if (i % 5 === 0) {
+//     console.log(i);
+//   }
+//   i += 1;
+// }
+//------------------------
+// let i = min;
+// do {
+//   if (i % 5 === 0) {
+//     console.log(i);
+//   }
+//   i += 1;
+// } while (i <= max);
+//-----------------------------
+
+// const password = "admin";
+// let userPassword;
+// do {
+//   userPassword = prompt("Enter password");
+//   console.log(userPassword);
+// } while (userPassword !== password);
