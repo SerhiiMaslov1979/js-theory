@@ -212,3 +212,159 @@
 // cards.splice(index, 1, "Обновленная карточка-4");
 
 // console.table(cards);
+
+//----------------------------------------------------------
+// 2 - 2
+
+// Функции
+// - Функциональные выражени
+// - ргументы и параметры
+// - Возврат значения
+
+// const add = function (x, y) {
+//   console.log(x);
+//   console.log(y);
+//   console.log("Выполняется функция add");
+
+//   return x + y;
+// };
+
+// const r1 = add(5, 3);
+// console.log("r1: ", r1);
+
+// const r2 = add(10, 15);
+// console.log("r2: ", r2);
+
+// const r3 = add(30, 50);
+// console.log("r3: ", r3);
+
+//-------------------------------------
+
+// const fn = function (value) {
+//   console.log(1);
+//   console.log(2);
+
+//   if (value < 50) {
+//     return "Меньше чем 50";
+//   }
+//   return "Больше чем 50";
+// };
+
+// console.log("Результат функции: ", fn(10));
+
+// console.log("Результат функции: ", fn(1000));
+
+//------------------------------------
+
+// const cart = [54, 28, 105, 70, 92, 17, 120, 12, 25, 90];
+// let total = 0;
+
+// for (const value of cart) {
+//   total += value;
+// }
+
+// console.log("Total: ", total);
+
+//--------------------------------------------------------
+
+// const calculateTotalPrice = function (items) {
+//   console.log("items внутри функции: ", items);
+//   let total = 0;
+
+//   for (const item of items) {
+//     total += item;
+//   }
+//   return total;
+// };
+// // так
+// const r1 = calculateTotalPrice([1, 2, 3]);
+// console.log(`Общая сумма покупок ${r1}`);
+
+// // или так
+// console.log(calculateTotalPrice([5, 10, 15, 20]));
+// console.log(calculateTotalPrice([100, 200, 300]));
+
+//-------------------------------------------------------
+
+// const logins = ["m4ngoDoge", "k1widab3st", "poly1scute", "aj4xth3m4n"];
+// const loginToFind = "aj4xth3m4n";
+
+// const message = logins.includes(loginToFind)
+//   ? `Пользователь ${loginToFind} найден.`
+//   : `Пользователь ${loginToFind} не найденю`;
+
+// console.log(message);
+// const findLogin = function (allLogins, loginToFind) {};
+
+// или
+
+const logins = ["m4ngoDoge", "k1widab3st", "poly1scute", "aj4xth3m4n"];
+
+// 1 вариант
+
+// const findLogin = function (allLogins, loginToFind) {
+//   let message = `Пользователь ${loginToFind} не найден.`;
+//   for (const login of allLogins) {
+//     if (login === loginToFind) {
+//       message = `Пользователь ${loginToFind} найден.`;
+//     }
+//   }
+//   return message;
+// };
+
+// console.log(findLogin(logins, "avocod3r"));
+// console.log(findLogin(logins, "k1widab3st"));
+// console.log(findLogin(logins, "jam4l"));
+// console.log(findLogin(logins, "poly1scute"));
+
+// 2 вариант лучший
+
+// const findLogin = function (allLogins, loginToFind) {
+//   for (const login of allLogins) {
+//     if (login === loginToFind) {
+//       return `Пользователь ${loginToFind} найден.`;
+//     }
+//   }
+//   return `Пользователь ${loginToFind} не найден.`;
+// };
+
+// console.log(findLogin(logins, "avocod3r"));
+// console.log(findLogin(logins, "k1widab3st"));
+// console.log(findLogin(logins, "jam4l"));
+// console.log(findLogin(logins, "poly1scute"));
+
+// 3 вариант
+
+// const findLogin = function (allLogins, loginToFind) {
+//   let message = `Пользователь ${loginToFind} не найден.`;
+//   for (const login of allLogins) {
+//     if (login === loginToFind) {
+//       message = `Пользователь ${loginToFind} найден.`;
+
+//       return message;
+//     }
+//   }
+//   return message;
+// };
+
+// console.log(findLogin(logins, "avocod3r"));
+// console.log(findLogin(logins, "k1widab3st"));
+// console.log(findLogin(logins, "jam4l"));
+// console.log(findLogin(logins, "poly1scute"));
+
+// 4 короткий вариант
+
+const findLogin = function (allLogins, loginToFind) {
+  const message = logins.includes(loginToFind)
+    ? `Пользователь ${loginToFind} найден.`
+    : `Пользователь ${loginToFind} не найденю`;
+
+  return message;
+};
+
+console.log(findLogin(logins, "avocod3r"));
+console.log(findLogin(logins, "k1widab3st"));
+console.log(findLogin(logins, "jam4l"));
+console.log(findLogin(logins, "poly1scute"));
+
+//-----------------------------------------------
