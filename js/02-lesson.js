@@ -298,7 +298,7 @@
 
 // или
 
-const logins = ["m4ngoDoge", "k1widab3st", "poly1scute", "aj4xth3m4n"];
+// const logins = ["m4ngoDoge", "k1widab3st", "poly1scute", "aj4xth3m4n"];
 
 // 1 вариант
 
@@ -354,17 +354,40 @@ const logins = ["m4ngoDoge", "k1widab3st", "poly1scute", "aj4xth3m4n"];
 
 // 4 короткий вариант
 
-const findLogin = function (allLogins, loginToFind) {
-  const message = logins.includes(loginToFind)
-    ? `Пользователь ${loginToFind} найден.`
-    : `Пользователь ${loginToFind} не найденю`;
+// const findLogin = function (allLogins, loginToFind) {
+//   const message = logins.includes(loginToFind)
+//     ? `Пользователь ${loginToFind} найден.`
+//     : `Пользователь ${loginToFind} не найденю`;
 
-  return message;
-};
+//   return message;
+// };
 
-console.log(findLogin(logins, "avocod3r"));
-console.log(findLogin(logins, "k1widab3st"));
-console.log(findLogin(logins, "jam4l"));
-console.log(findLogin(logins, "poly1scute"));
+// console.log(findLogin(logins, "avocod3r"));
+// console.log(findLogin(logins, "k1widab3st"));
+// console.log(findLogin(logins, "jam4l"));
+// console.log(findLogin(logins, "poly1scute"));
 
 //-----------------------------------------------
+
+// 5 вариант Запись одной строкой
+
+// const findLogin = function (allLogins, loginToFind) {
+//   return allLogins.includes(loginToFind)
+//     ? `Пользователь ${loginToFind} найден.`
+//     : `Пользователь ${loginToFind} не найденю`;
+// };
+
+// console.log(findLogin(logins, "avocod3r"));
+// console.log(findLogin(logins, "k1widab3st"));
+// console.log(findLogin(logins, "jam4l"));
+// console.log(findLogin(logins, "poly1scute"));
+
+//--------------------------------------------------
+
+// const slugify = function (string) {
+//   return string.toLowerCase().split(" ").join("-");
+// };
+
+// console.log(slugify("Top 10 benefits of React framework"));
+// console.log(slugify("Azure Static Web Apps are Awesome"));
+// console.log(slugify("Technical writing tips for non-native English speakers"));
